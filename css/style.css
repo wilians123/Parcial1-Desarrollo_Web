@@ -136,3 +136,110 @@ footer {
   padding: 15px;
   font-weight: bold;
 }
+
+#parrafoCambiar {
+  font-weight: 500;
+  color: #0d6efd;
+  margin-top: 10px;
+}
+
+section.mb-4.d-grid-interacciones {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.mb-4.d-grid-interacciones:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#nuevaHabilidad {
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+#agregarHabilidad,
+#btnBienvenida,
+#btnColorFondo,
+#btnCambiarParrafo {
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#agregarHabilidad:hover,
+#btnBienvenida:hover,
+#btnColorFondo:hover,
+#btnCambiarParrafo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#btnBienvenida {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+}
+
+#btnColorFondo {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+}
+
+#btnCambiarParrafo {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+}
+
+#agregarHabilidad {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+}
+
+#listaDinamica li {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#listaDinamica li:hover {
+  background-color: #e9f2fb;
+  transform: translateX(5px);
+}
+
+.d-grid-interacciones {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.d-grid-interacciones:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#btnCargarAPI {
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px 20px;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btnCargarAPI:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#resultadoAPI .card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-top: 10px;
+}

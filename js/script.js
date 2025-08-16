@@ -30,6 +30,7 @@ $(document).ready(function () {
       $("#nuevaHabilidad").val("");
     }
   });
+
   $("form").submit(function (e) {
     e.preventDefault();
     let nombre = $("#nombre").val().trim();
@@ -57,5 +58,28 @@ $(document).ready(function () {
 
   $("#btnCambiarParrafo").click(function () {
     $("#parrafoCambiar").text("¡El contenido del párrafo ha sido actualizado!");
+  });
+});
+
+$("#btnCargarAPI").click(function () {
+  $.ajax({
+    url: "https://s1uplfovq4.execute-api.us-east-1.amazonaws.com/default/example",
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+      $("#resultadoAPI").html(
+        '<div class="card p-3 shadow-sm mt-3" style="border-radius:12px; background-color:#f8f9fa;">' +
+          '<h3 class="card-title">Mensaje desde API:</h3>' +
+          '<p class="card-text">' +
+          data.mensaje +
+          "</p>" +
+          "</div>"
+      );
+    },
+    error: function () {
+      $("#resultadoAPI").html(
+        '<div class="alert alert-danger mt-3" role="alert">Error al cargar los datos de la API.</div>'
+      );
+    },
   });
 });
