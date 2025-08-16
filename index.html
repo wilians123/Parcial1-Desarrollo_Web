@@ -8,72 +8,73 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Perfil de Usuario</h1>
-      <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="demo-api-rest.html">Consumo de API</a> |
-        <a href="https://www.google.com" target="_blank">Google</a>
-      </nav>
+    <header class="bg-dark text-white p-3">
+      <div class="container">
+        <h1 class="mb-0">Perfil de Usuario</h1>
+        <nav class="mt-2">
+          <a href="index.html" class="text-white me-3">Inicio</a>
+          <a href="demo-api-rest.html" class="text-white me-3"
+            >Consumo de API</a
+          >
+          <a href="https://www.google.com" target="_blank" class="text-white"
+            >Google</a
+          >
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
+    <main class="container my-4">
+      <section class="mb-4">
         <h2>Acerca de mí</h2>
-        <h3>Introducción</h3>
-        <p>
-          Mi nombre es <strong>Willians Heriberto Navas Reyes</strong> y soy
-          estudiante de desarrollo web. Me apasiona la tecnología, el diseño y
-          el aprendizaje continuo.
-        </p>
-        <p>
-          Actualmente estoy desarrollando proyectos académicos que me permiten
-          aplicar los conocimientos adquiridos en clase y experimentar con
-          nuevas herramientas.
-        </p>
-        <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQE36b_26o87VA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673813053995?e=1756944000&v=beta&t=iK0bYsF9juOUDOAPZ5eW_dRRsEy0_R-2ZY2Nurs_VpY"
-          alt="Foto de perfil"
-          width="200"
-        />
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQE36b_26o87VA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673813053995?e=1756944000&v=beta&t=iK0bYsF9juOUDOAPZ5eW_dRRsEy0_R-2ZY2Nurs_VpY"
+              alt="Foto de perfil"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              Mi nombre es <strong>Willians Heriberto Navas Reyes</strong> y soy
+              estudiante de desarrollo web.
+            </p>
+            <p>
+              Actualmente curso Ingeniería en Sistemas en la Universidad Mariano
+              Gálvez.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Mis intereses</h2>
-        <h3>Áreas principales</h3>
-        <p>
-          Me gusta aprender sobre desarrollo frontend, bases de datos y temas
-          relacionados con inteligencia artificial.
-        </p>
-        <p>
-          En mi tiempo libre disfruto leer libros de tecnología y participar en
-          comunidades en línea.
-        </p>
-      </section>
-
-      <section>
+      <section class="mb-4">
         <h2>Lista de habilidades</h2>
-        <h3>Principales</h3>
-        <ul>
-          <li>HTML5, CSS3 y JavaScript</li>
-          <li>Bootstrap y diseño responsive</li>
-          <li>Bases de datos SQL</li>
-          <li>Git y control de versiones</li>
-        </ul>
-
-        <h3>Habilidades en desarrollo</h3>
-        <ol>
-          <li>Python para backend</li>
-          <li>Seguridad informática</li>
-          <li>Consumo de APIs</li>
-          <li>Metodologías ágiles</li>
-        </ol>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Principales</h3>
+            <ul class="list-group">
+              <li class="list-group-item">HTML5, CSS3 y JavaScript</li>
+              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item">Bases de datos SQL</li>
+              <li class="list-group-item">Git</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>En desarrollo</h3>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Python</li>
+              <li class="list-group-item">Seguridad informática</li>
+              <li class="list-group-item">Consumo de APIs</li>
+              <li class="list-group-item">Metodologías ágiles</li>
+            </ol>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section class="mb-4">
         <h2>Información personal</h2>
-        <table border="1" cellpadding="10">
-          <thead>
+        <table class="table table-bordered text-center">
+          <thead class="table-dark">
             <tr>
               <th>Dato</th>
               <th>Valor</th>
@@ -94,14 +95,48 @@
             </tr>
             <tr>
               <td>Ubicación</td>
-              <td>Puerto Barrios, Izabal, Guatemala</td>
+              <td>Puerto Barrios, Izabal</td>
             </tr>
           </tbody>
         </table>
       </section>
+
+      <section class="mb-4">
+        <h2>Formulario de contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              class="form-control"
+              placeholder="Escribe tu nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              id="correo"
+              class="form-control"
+              placeholder="ejemplo@correo.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea
+              id="mensaje"
+              class="form-control"
+              rows="4"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
+          </div>
+          <input type="submit" value="Enviar" class="btn btn-primary" />
+        </form>
+      </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center p-3">
       <p>Contacto: wnavasr@miumg.edu.gt</p>
     </footer>
 
