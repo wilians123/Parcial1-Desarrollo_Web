@@ -46,6 +46,34 @@
           </div>
         </div>
       </section>
+      <section class="mb-4">
+        <h2>Interacciones</h2>
+        <button id="btnBienvenida" class="btn btn-success me-2">Saludar</button>
+        <button id="btnColorFondo" class="btn btn-warning me-2">
+          Cambiar color de fondo
+        </button>
+        <button id="btnCambiarParrafo" class="btn btn-info">
+          Cambiar párrafo
+        </button>
+
+        <p id="parrafoCambiar" class="mt-2">
+          Este párrafo se puede cambiar al presionar el botón.
+        </p>
+
+        <div class="mt-3 d-flex gap-2">
+          <input
+            type="text"
+            id="nuevaHabilidad"
+            class="form-control w-50"
+            placeholder="Nueva habilidad"
+          />
+          <button id="agregarHabilidad" class="btn btn-primary">
+            Agregar a la lista
+          </button>
+        </div>
+
+        <ul id="listaDinamica" class="list-group mt-2"></ul>
+      </section>
 
       <section class="mb-4">
         <h2>Lista de habilidades</h2>
@@ -84,8 +112,8 @@
         <table class="table table-bordered text-center">
           <thead class="table-dark">
             <tr>
-              <th></th>
-              <th>Valor</th>
+              <th>Datos</th>
+              <th>Valores</th>
             </tr>
           </thead>
           <tbody>
