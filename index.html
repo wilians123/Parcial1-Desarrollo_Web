@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="bg-dark text-white p-3">
@@ -31,7 +31,7 @@
             <img
               src="https://media.licdn.com/dms/image/v2/D4D03AQE36b_26o87VA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673813053995?e=1756944000&v=beta&t=iK0bYsF9juOUDOAPZ5eW_dRRsEy0_R-2ZY2Nurs_VpY"
               alt="Foto de perfil"
-              class="img-fluid rounded-circle"
+              class="img-fluid rounded-circle sombra-foto"
             />
           </div>
           <div class="col-md-8">
@@ -49,24 +49,32 @@
 
       <section class="mb-4">
         <h2>Lista de habilidades</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Principales</h3>
-            <ul class="list-group">
-              <li class="list-group-item">HTML5, CSS3 y JavaScript</li>
-              <li class="list-group-item">Bootstrap</li>
-              <li class="list-group-item">Bases de datos SQL</li>
-              <li class="list-group-item">Git</li>
-            </ul>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Principales</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">HTML5, CSS3 y JavaScript</li>
+                  <li class="list-group-item">Bootstrap</li>
+                  <li class="list-group-item">Bases de datos SQL</li>
+                  <li class="list-group-item">Git</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h3>En desarrollo</h3>
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item">Python</li>
-              <li class="list-group-item">Seguridad informática</li>
-              <li class="list-group-item">Consumo de APIs</li>
-              <li class="list-group-item">Metodologías ágiles</li>
-            </ol>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">En desarrollo</h3>
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item">Python</li>
+                  <li class="list-group-item">Seguridad informática</li>
+                  <li class="list-group-item">Consumo de APIs</li>
+                  <li class="list-group-item">Metodologías ágiles</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +84,7 @@
         <table class="table table-bordered text-center">
           <thead class="table-dark">
             <tr>
-              <th>Dato</th>
+              <th></th>
               <th>Valor</th>
             </tr>
           </thead>
@@ -137,7 +145,7 @@
     </main>
 
     <footer class="bg-dark text-white text-center p-3">
-      <p>Contacto: wnavasr@miumg.edu.gt</p>
+      <p><strong>Contacto: wnavasr@miumg.edu.gt</strong></p>
     </footer>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
